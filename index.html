@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Netflix India – Watch TV Shows Online, Watch Movies Online Mini Project By Jeevan R">
+    <meta name="keywords" content="Netflix, IndiaNetflix, Mini Project">
+    <meta name="author" content="Jeevan R, Karnataka, India">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="assets/inficon2023.jpg" type="image/x-icon">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+</head>
+<body>
+    <div class="header">
+    <header class="uu">
+        <div class="hh1">
+        <div class="nnav">
+            <div class="logo">
+                <span class="asp">
+                    <svg viewBox="0 0 111 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                        aria-hidden="true" role="img" class="svglogo">
+                        <g>
+                            <path
+                                d="M105.06233,14.2806261 L110.999156,30 C109.249227,29.7497422 107.500234,29.4366857 105.718437,29.1554972 L102.374168,20.4686475 L98.9371075,28.4375293 C97.2499766,28.1563408 95.5928391,28.061674 93.9057081,27.8432843 L99.9372012,14.0931671 L94.4680851,-5.68434189e-14 L99.5313525,-5.68434189e-14 L102.593495,7.87421502 L105.874965,-5.68434189e-14 L110.999156,-5.68434189e-14 L105.06233,14.2806261 Z M90.4686475,-5.68434189e-14 L85.8749649,-5.68434189e-14 L85.8749649,27.2499766 C87.3746368,27.3437061 88.9371075,27.4055675 90.4686475,27.5930265 L90.4686475,-5.68434189e-14 Z M81.9055207,26.93692 C77.7186241,26.6557316 73.5307901,26.4064111 69.250164,26.3117443 L69.250164,-5.68434189e-14 L73.9366389,-5.68434189e-14 L73.9366389,21.8745899 C76.6248008,21.9373887 79.3120255,22.1557784 81.9055207,22.2804387 L81.9055207,26.93692 Z M64.2496954,10.6561065 L64.2496954,15.3435186 L57.8442216,15.3435186 L57.8442216,25.9996251 L53.2186709,25.9996251 L53.2186709,-5.68434189e-14 L66.3436123,-5.68434189e-14 L66.3436123,4.68741213 L57.8442216,4.68741213 L57.8442216,10.6561065 L64.2496954,10.6561065 Z M45.3435186,4.68741213 L45.3435186,26.2498828 C43.7810479,26.2498828 42.1876465,26.2498828 40.6561065,26.3117443 L40.6561065,4.68741213 L35.8121661,4.68741213 L35.8121661,-5.68434189e-14 L50.2183897,-5.68434189e-14 L50.2183897,4.68741213 L45.3435186,4.68741213 Z M30.749836,15.5928391 C28.687787,15.5928391 26.2498828,15.5928391 24.4999531,15.6875059 L24.4999531,22.6562939 C27.2499766,22.4678976 30,22.2495079 32.7809542,22.1557784 L32.7809542,26.6557316 L19.812541,27.6876933 L19.812541,-5.68434189e-14 L32.7809542,-5.68434189e-14 L32.7809542,4.68741213 L24.4999531,4.68741213 L24.4999531,10.9991564 C26.3126816,10.9991564 29.0936358,10.9054269 30.749836,10.9054269 L30.749836,15.5928391 Z M4.78114163,12.9684132 L4.78114163,29.3429562 C3.09401069,29.5313525 1.59340144,29.7497422 0,30 L0,-5.68434189e-14 L4.4690224,-5.68434189e-14 L10.562377,17.0315868 L10.562377,-5.68434189e-14 L15.2497891,-5.68434189e-14 L15.2497891,28.061674 C13.5935889,28.3437998 11.906458,28.4375293 10.1246602,28.6868498 L4.78114163,12.9684132 Z">
+                            </path>
+                        </g>
+                    </svg>
+                    <span class="netflix-logo">Netflix</span>
+                </span>
+            </div>
+            <div  class="right">
+                <div class=" right-side">
+                    <span>
+                        <div class="headlang">
+                            <label class="selectlang">Select Language</label>
+                            <div class="xa">
+                                <div role="img" aria-hidden="true" class="ax">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z" fill="currentColor"></path></svg>
+                                </div>
+                                <select id="283221a6fc8c7" name="LanguageSelect" data-uia="language-picker-header">
+                                    <option lang="en" label="English" value="en-IN" selected="">English</option>
+                                    <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+                                </select>
+                                <div aria-hidden="true" class="lo ea3diy33">
+                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="CaretDown" aria-hidden="true"><path fill-rule="evenodd" clip-rule="evenodd" d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.23574 10.2643C8.10555 10.3945 7.89445 10.3945 7.76425 10.2643L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z" fill="currentColor"></path></svg>
+                                </div>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+                <div class="signin">
+                    <div>
+                        <a role="button" class="sign" id="signIn" data-uia="header-login-link" href="index.html">Sign In</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </header>
+    </div>
+    <div>
+        <div class="sec1">
+            <div class="bgimg">
+                <div class="bgins">
+                    <img class="bglink" src="assets/indiabg.jpg" alt="">
+                </div>
+                <div class="shadow" style="background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 0, rgba(0, 0, 0, 0) 60%, rgba(0, 0, 0, 0.8) 100%);"></div>
+            </div>
+            <div class="sec">
+                <div class="content">
+                    <h1 class="heading">Unlimited movies, TV shows and more</h1>
+                    <p class="para">Watch anywhere. Cancel anytime.</p>
+                    <div class="cons">
+                        <div class="form">
+                            <form action="" class="fills" aria-label="Sign up or restart your membership with Netflix." method="post">
+                                <h3 class="hh3">Ready to watch? Enter your email to create or restart your membership.</h3>
+                                <div data-issplitform="false" data-hasmessage="false" class="flsfill">
+                                    <div  class="messfill">
+                                        <label class="labe">Email address</label>
+                                        <div class="inp">
+                                            <input autocomplete="email" minlength="5" maxlength="50" type="email" name="email" value="">
+                                            <div aria-hidden="true" class="bgg"></div>
+                                        </div>
+                                    </div>
+                                    <button role="button" class="btn"type="submit">Get Started
+                                        <div aria-hidden="true" class="default-ltr-cache-17uj5h e1ax5wel0">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight" aria-hidden="true">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z" fill="currentColor"></path>
+                                            </svg>
+                                        </div>
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="ss"></div>
+                    </div>
+                </div>
+                <div class="dd"></div>
+            </div>
+            <div class="rod"></div>
+        </div>
+        <div class="sec2">
+            <div class="a2sec">
+                <div class="text2">
+                    <h2 class="h2">Enjoy on your TV</h2>
+                    <p class="p2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+                    <div class="margin2"><div class="blank2"></div></div>
+                </div>
+                <div class="img2">
+                    <div class="frame2">
+                        <img src="assets/tv.png" class="frameimg">
+                        <div class="framegif">
+                            <video autoplay="" playsinline="" muted="" loop="">
+                                <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rod"></div>
+        </div>
+        <div class="sec2">
+            <div class="a3sec">
+                <div class="text3">
+                    <h2 class="h2">Download your shows to watch offline</h2>
+                    <p class="p2">Save your favourites easily and always have something to watch.</p>
+                    <div class="margin2">
+                        <div class="blank2"></div>
+                    </div>
+                </div>
+                <div class="img3">
+                    <div class="frame2">
+                        <img src="assets/mobile-0819.jpg" class="frameimg">
+                        <div class="framegif3">
+                            <div class="short">
+                                <img src="assets/boxshot.png" alt="" class="imgg3">
+                            </div>
+                            <div class="down">
+                                <div class="st">Stranger Things</div>
+                                <div class="dnn">Downloading...</div>
+                            </div>
+                            <div class="gif"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rod"></div>
+        </div>
+        <div class="sec2">
+            <div class="a2sec">
+                <div class="text2">
+                    <h2 class="h2">Watch everywhere</h2>
+                    <p class="p2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <div class="margin2">
+                        <div class="blank2"></div>
+                    </div>
+                </div>
+                <div class="img2">
+                    <div class="frame2">
+                        <img src="assets/device-pile-in.png" class="frameimg">
+                        <div class="framegif4">
+                            <video autoplay="" playsinline="" muted="" loop="">
+                                <source
+                                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rod"></div>
+        </div>
+        <div class="sec2">
+            <div class="a3sec">
+                <div class="text3">
+                    <h2 class="h2">Create profiles for kids</h2>
+                    <p class="p2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</p>
+                    <div class="margin2">
+                        <div class="blank2"></div>
+                    </div>
+                </div>
+                <div class="img3">
+                    <div class="frame2">
+                        <img src="assets/child.png" class="frameimg">
+                        <div class="frameg">
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rod"></div>
+        </div>
+        <div class="sec2">
+            <div class="a4sec">
+                <div class="text4">
+                    <h2 class="h2">Frequently Asked Questions</h2>
+                    <div class="box">
+                        <ul class="unlist">
+                            <li class="listt">
+                                <h3 content="[object Object]" class="listh3">
+                                    <button aria-expanded="false"class="abt" type="button"><span>What is Netflix?</span>
+                                        <svg width="36" height="36"
+                                            viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Bplus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z" fill="currentColor">
+                                            </path>
+                                        </svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Splus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z" fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </h3>
+                                <div class="objh3" role="region" data-is-open="false" content="[object Object]">
+                                    <span id="" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies,
+                                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as you
+                                        want, whenever you want, without a single ad – all for one low monthly price. There's always something new to
+                                        discover, and new TV shows and movies are added every week!</span>
+                                </div>
+                            </li>
+                            <li class="listt">
+                                <h3 content="[object Object]" class="listh3">
+                                    <button aria-expanded="false" class="abt" type="button"><span>How much does Netflix cost?</span>
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="Bplus"
+                                            data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Splus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </h3>
+                                <div class="objh3" role="region" data-is-open="false" content="[object Object]">
+                                    <span id="" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                        movies,
+                                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as
+                                        you
+                                        want, whenever you want, without a single ad – all for one low monthly price. There's always something new
+                                        to
+                                        discover, and new TV shows and movies are added every week!</span>
+                                </div>
+                            </li>
+                            <li class="listt">
+                                <h3 content="[object Object]" class="listh3">
+                                    <button aria-expanded="false" class="abt" type="button"><span>Where can I watch?</span>
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="Bplus"
+                                            data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Splus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </h3>
+                                <div class="objh3" role="region" data-is-open="false" content="[object Object]">
+                                    <span id="" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                        movies,
+                                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as
+                                        you
+                                        want, whenever you want, without a single ad – all for one low monthly price. There's always something new
+                                        to
+                                        discover, and new TV shows and movies are added every week!</span>
+                                </div>
+                            </li>
+                            <li class="listt">
+                                <h3 content="[object Object]" class="listh3">
+                                    <button aria-expanded="false" class="abt" type="button"><span>How do I cancel?</span>
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="Bplus"
+                                            data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Splus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </h3>
+                                <div class="objh3" role="region" data-is-open="false" content="[object Object]">
+                                    <span id="" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                        movies,
+                                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as
+                                        you
+                                        want, whenever you want, without a single ad – all for one low monthly price. There's always something new
+                                        to
+                                        discover, and new TV shows and movies are added every week!</span>
+                                </div>
+                            </li>
+                            <li class="listt">
+                                <h3 content="[object Object]" class="listh3">
+                                    <button aria-expanded="false" class="abt" type="button"><span>What can I watch on Netflix?</span>
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="Bplus"
+                                            data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Splus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </h3>
+                                <div class="objh3" role="region" data-is-open="false" content="[object Object]">
+                                    <span id="" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                        movies,
+                                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as
+                                        you
+                                        want, whenever you want, without a single ad – all for one low monthly price. There's always something new
+                                        to
+                                        discover, and new TV shows and movies are added every week!</span>
+                                </div>
+                            </li>
+                            <li class="listt">
+                                <h3 content="[object Object]" class="listh3">
+                                    <button aria-expanded="false" class="abt" type="button"><span>Is Netflix good for kids?</span>
+                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="Bplus"
+                                            data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 17V3H19V17H33V19H19V33H17V19H3V17H17Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            class="Splus" data-name="Plus" alt="">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M11 11V2H13V11H22V13H13V22H11V13H2V11H11Z"
+                                                fill="currentColor">
+                                            </path>
+                                        </svg>
+                                    </button>
+                                </h3>
+                                <div class="objh3" role="region" data-is-open="false" content="[object Object]">
+                                    <span id="" data-uia="">Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                                        movies,
+                                        anime, documentaries and more – on thousands of internet-connected devices.<br><br>You can watch as much as
+                                        you
+                                        want, whenever you want, without a single ad – all for one low monthly price. There's always something new
+                                        to
+                                        discover, and new TV shows and movies are added every week!</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="conss">
+                            <div class="form">
+                                <form action="" class="fills" aria-label="Sign up or restart your membership with Netflix." method="post">
+                                    <h3 class="hh3">Ready to watch? Enter your email to create or restart your membership.</h3>
+                                    <div data-issplitform="false" data-hasmessage="false" class="flsfill">
+                                        <div class="messfill">
+                                            <label class="labe">Email address</label>
+                                            <div class="inp">
+                                                <input autocomplete="email" minlength="5" maxlength="50" type="email" name="email" value="">
+                                                <div aria-hidden="true" class="bgg"></div>
+                                            </div>
+                                        </div>
+                                        <button role="button" class="btn" type="submit">Get Started
+                                            <div aria-hidden="true" class="default-ltr-cache-17uj5h e1ax5wel0">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    data-mirrorinrtl="true" class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="ChevronRight"
+                                                    aria-hidden="true">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M15.5859 12L8.29303 19.2928L9.70725 20.7071L17.7072 12.7071C17.8948 12.5195 18.0001 12.2652 18.0001 12C18.0001 11.7347 17.8948 11.4804 17.7072 11.2928L9.70724 3.29285L8.29303 4.70706L15.5859 12Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="ss"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="margin"></div>
+            </div>
+            <div class="rod"></div>
+        </div>
+    </div>
+    <footer class="foot">
+        <div class="wrapper">
+            <div class="container">
+                    <div class="item">
+                        <div class="bb">
+                        Questions? Call
+                        <a href="tel:000-800-919-1694">000-800-919-1694</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="fleex">
+                            <div class="wrapp">
+                                <ul class="aaa">
+                                    <li class="fitt">
+                                        <a href="https://help.netflix.com/support/412" class="likk">FAQ</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="https://help.netflix.com" class="likk">Help Centre</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Account</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Media Centre</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Investor Relations</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Jobs</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Ways to Watch</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Terms of Use</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Privacy</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Cookie Preferences</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Corporate Information</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Contact Us</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Speed Test</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Legal Notices</a>
+                                    </li>
+                                    <li class="fitt">
+                                        <a href="index.html" class="likk">Only on Netflix</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="wrapp">
+                        <div class="con">
+                            <div class="iss">
+                                <span>
+                                    <div class="headlang">
+                                        <label class="selectlang">Select Language</label>
+                                        <div class="xa">
+                                            <div role="img" aria-hidden="true" class="ax">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="Languages" aria-hidden="true">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M10.7668 5.33333L10.5038 5.99715L9.33974 8.9355L8.76866 10.377L7.33333 14H9.10751L9.83505 12.0326H13.4217L14.162 14H16L12.5665 5.33333H10.8278H10.7668ZM10.6186 9.93479L10.3839 10.5632H11.1036H12.8856L11.6348 7.2136L10.6186 9.93479ZM9.52722 4.84224C9.55393 4.77481 9.58574 4.71045 9.62211 4.64954H6.41909V2H4.926V4.64954H0.540802V5.99715H4.31466C3.35062 7.79015 1.75173 9.51463 0 10.4283C0.329184 10.7138 0.811203 11.2391 1.04633 11.5931C2.55118 10.6795 3.90318 9.22912 4.926 7.57316V12.6667H6.41909V7.51606C6.81951 8.15256 7.26748 8.76169 7.7521 9.32292L8.31996 7.88955C7.80191 7.29052 7.34631 6.64699 6.9834 5.99715H9.06968L9.52722 4.84224Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                            <select id="283221a6fc8c7" name="LanguageSelect" data-uia="language-picker-header">
+                                                <option lang="en" label="English" value="en-IN" selected="">English</option>
+                                                <option lang="hi" label="हिन्दी" value="hi-IN">हिन्दी</option>
+                                            </select>
+                                            <div aria-hidden="true" class="lo ea3diy33">
+                                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                                    class="default-ltr-cache-4z3qvp e1svuwfo1" data-name="CaretDown" aria-hidden="true">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                                        d="M11.5976 6.5C11.7461 6.5 11.8204 6.67956 11.7154 6.78457L8.23574 10.2643C8.10555 10.3945 7.89445 10.3945 7.76425 10.2643L4.28457 6.78457C4.17956 6.67956 4.25393 6.5 4.40244 6.5H11.5976Z"
+                                                        fill="currentColor"></path>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="ind">Netflix India</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="oot"></div>
+</body>
+</html>
