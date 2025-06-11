@@ -15,7 +15,7 @@ A responsive Netflix India landing page clone built with HTML and CSS. This proj
 
 ## Demo
 
-![Screenshot](assets/indiabg.jpg)
+![Screenshot](assets/screen.png)
 
 ## Getting Started
 
